@@ -1,0 +1,1244 @@
+/* Default styles */
+.content {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Align content horizontally in the center */
+    align-items: center; /* Align content vertically in the center */
+    height: 100vh;
+    background-image: url('./images/background_update.png');
+    background-size: 100% 100%; /* Cover the entire screen without zooming */
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.left, .right {
+    margin-top: -8%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 25%; /* Adjust the width of the left and right sections */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.left {
+    margin-left: -7%;
+    left: 0;
+    background-image: url('./images/background_lamp_right2.png'); /* Path to your left image */
+}
+
+.right {
+    margin-right: -8%;
+    right: 0;
+    background-image: url('./images/background_lamp_left.png'); /* Path to your right image */
+}
+
+.slider-container {
+    margin-top: -10%;
+    margin-left: -20%;
+    width: 45%; /* Adjust this value to control the width of the slider container */
+    overflow: hidden;
+    position: relative; /* Change to relative */
+    z-index: 1; /* Ensure the slider is above the left and right sections */
+    border: 1px;
+    border-radius: 30px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slide img {
+    max-width: 100%; /* Adjust image size as needed */
+    height: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    font-size: 24px;
+    background: transparent; /* Semi-transparent white background */
+    padding: 10px;
+    border: none;
+    color: #333; /* Text color */
+    border-radius: 20px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.panchangam {
+    position: absolute;
+    top: 38%;
+    right: -5%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    padding: 20px;
+    background-image: url('images/Panchagam.png');
+    background-size: 100% 100%; /* Maintain the image's aspect ratio */
+    background-position: center; /* Center the background image */
+    color: white;
+    height: 90%;
+    width: 25%;
+}
+
+.panchangam h2 {
+    margin-top: 25%;
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.date {
+    font-weight: bold;
+    font-size: 20px;
+    color: #5c0ec9;
+    margin-bottom: 5px; /* Adjust margin-bottom */
+}
+
+.pan {
+    font-weight: bold;
+    font-size: 20px;
+    color: red;
+}
+
+.day {
+    font-weight: bold;
+    font-size: 20px;
+    color: #5c0ec9;
+    margin-top: 0; /* Adjust margin-top */
+}
+
+.Devote {
+    background-image: url('images/donate-bg.png');
+    background-size: 100% 100%; /* Adjusts the background image size */
+    background-position: center; /* Centers the background image */
+    width: 22%; /* Adjust width as needed */
+    height: 27%; /* Adjust height as needed */
+    position: absolute;
+    bottom: 5%;
+    right: 13%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+.Devote h2 {
+    font-size: 20px; /* Adjust font size for the heading */
+    margin-top: 8%;
+    margin-bottom: 0px; /* Adjust margin-bottom as needed */
+    background-image: url('images/button1.png'); /* Background image for the heading */
+    background-size: 100% 100% ; /* Adjusts the background image size */
+    background-position: center; /* Centers the background image */
+    border-radius: 30px;
+    padding: 10px 20px; /* Adjust padding as needed */
+    display: inline-block; /*Ensures the background covers the entire heading*/
+}
+.devote-button a {
+    color: inherit; /* Inherit button's text color */
+    text-decoration: none; /* Remove underline */
+}
+.Devote h4 {
+    font-size: 23px; /* Adjust font size */
+    color: #333; /* Text color */
+    margin-bottom: 25px; /* Adjust margin bottom */
+    text-align: center; /* Center text */
+    padding: 0 20px; /* Add padding to the left and right sides */
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.Devote .devote-button {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin: 20px auto; /* Center the button horizontally with 20px top and bottom margin */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #dc6464; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Add some border radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    animation: zoomIn 1s infinite alternate; /* Apply the zoom-in animation */
+}
+
+.Devote .devote-button:hover {
+    box-shadow: 0 0 20px rgba(220, 100, 100, 0.8); /* Glow effect on hover */
+    animation: none; /* Disable the animation on hover */
+}
+
+
+
+
+
+
+    /* Default styles */
+
+
+.left, .right {
+    margin-top: 2%;
+   
+}
+
+.left {
+    margin-left: -6%;
+    
+}
+
+.right {
+    margin-right: -7%;
+   
+}
+
+
+.panchangam {
+    position: absolute;
+    top: 36%;
+    right: -3%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    padding: 15px;
+    background-image: url('images/Panchagam.png');
+    background-size: 100% 100%; /* Maintain the image's aspect ratio */
+    background-position: center; /* Center the background image */
+    color: white;
+    height: 50%;
+    width: 25%;
+}
+
+.panchangam h2 {
+    margin-top: 13%;
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.date {
+    margin-top: -1%;
+    font-weight: bold;
+    font-size: 16px;
+    color: #5c0ec9;
+    margin-bottom: 4px; /* Adjust margin-bottom */
+}
+
+.pan {
+    font-weight: bold;
+    font-size: 16px;
+    color: red;
+}
+
+.day {
+    font-weight: bold;
+    font-size: 16px;
+    color: #5c0ec9;
+    margin-top: -6px; /* Adjust margin-top */
+}
+
+.Devote {
+  
+   
+    font-size: 16px;
+}
+.Devote h2 {
+    font-size: 16px; /* Adjust font size for the heading */
+   
+}
+.Devote h4 {
+    margin-top: 1%;
+    font-size: 16px; /* Adjust font size */
+   
+}
+
+
+
+.Devote .devote-button {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin: 20px auto; /* Center the button horizontally with 20px top and bottom margin */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #dc6464; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Add some border radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    animation: zoomIn 1s infinite alternate; /* Apply the zoom-in animation */
+}
+
+.Devote .devote-button:hover {
+    box-shadow: 0 0 20px rgba(220, 100, 100, 0.8); /* Glow effect on hover */
+    animation: none; /* Disable the animation on hover */
+}
+
+@media (max-width: 1300px) {
+    .panchangam h2 {
+        margin-top: 20%;
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: red;
+    }
+}
+
+@media (max-width: 1026px) {
+
+    .content {
+        background-size: cover; 
+     padding: 10px; /* Adjust padding for smaller screens */
+     flex-direction: column; /* Change flex direction to column to stack elements vertically */
+ }
+
+
+ .left, .right {
+    margin-top: -8%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 25%; /* Adjust the width of the left and right sections */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.left {
+    margin-left: -7%;
+    left: 0;
+    background-image: url('./images/background_lamp_right2.png'); /* Path to your left image */
+}
+
+.right {
+    margin-right: -8%;
+    right: 0;
+    background-image: url('./images/background_lamp_left.png'); /* Path to your right image */
+}
+
+
+ .slider-container {
+     margin: 0px auto 0; /* Center the slider and add top margin */
+     width: 70%; /* Adjust slider container width for smaller screens */
+     margin-top: -70px;
+ }
+
+ .panchangam {
+     position: relative; /* Change position to relative */
+     width: 50%; /* Adjust width to fill the container */
+     height: 40%;
+     max-width: none; /* Reset max-width */
+     right: -5%;
+     margin-top: 2%; /* Add margin-top to create space between slider and panchangam */
+ }
+ .panchangam h2 {
+     margin-top: 25%;
+     font-size: 28px;
+     margin-bottom: 10px;
+     color: red;
+ }
+ 
+ .date {
+     font-weight: bold;
+     font-size: 20px;
+     color: #5c0ec9;
+     margin-bottom: 0px; /* Adjust margin-bottom */
+ }
+ 
+ .pan {
+     margin-top: -10px;
+     font-weight: bold;
+     font-size: 20px;
+     color: red;
+ }
+ 
+ .day {
+     font-weight: bold;
+     font-size: 20px;
+     color: #5c0ec9;
+     margin-top: 10px; /* Adjust margin-top */
+ }
+ .Devote {
+     background-image: url('images/donate-bg.png');
+     background-size: 100% 100%; /* Adjusts the background image size */
+     background-position: center; /* Centers the background image */
+     width: 38%; /* Adjust width as needed */
+     height: 27%; /* Adjust height as needed */
+     position: absolute;
+     bottom: 11%;
+     right: 5%;
+     text-align: center;
+     color: white;
+     font-size: 24px;
+ }
+ .Devote h2 {
+     font-size: 24px; /* Adjust font size for the heading */
+     margin-top: 20%;
+     margin-bottom: 0px; /* Adjust margin-bottom as needed */
+     background-image: url('images/button1.png'); /* Background image for the heading */
+     background-size: cover; /* Adjusts the background image size */
+     background-position: center; /* Centers the background image */
+     border-radius: 10px;
+     padding: 5px 5px; /* Adjust padding as needed */
+     display: inline-block; /*Ensures the background covers the entire heading*/
+ }
+ .Devote h4 {
+     font-size: 24px; /* Adjust font size */
+     color: #333; /* Text color */
+     margin-top: 20px;
+     margin-bottom: 25px; /* Adjust margin bottom */
+     text-align: center; /* Center text */
+     padding: 0 20px; /* Add padding to the left and right sides */
+ }
+
+ 
+.left, .right {
+    margin-top: -50%;
+   
+}
+
+.left {
+    margin-left: -3%;
+    
+}
+
+.right {
+    margin-right: -3%;
+   
+}
+ 
+ @keyframes zoomIn {
+     0% { transform: scale(1); }
+     50% { transform: scale(1.1); }
+     100% { transform: scale(1); }
+ }
+ 
+ .Devote .devote-button {
+     font-size: 20px;
+     font-weight: bold;
+     display: block;
+     margin: 20px auto; /* Center the button horizontally with 20px top and bottom margin */
+     padding: 10px 20px; /* Adjust padding as needed */
+     background-color: #dc6464; /* Button background color */
+     color: #fff; /* Button text color */
+     border: none; /* Remove border */
+     border-radius: 20px; /* Add some border radius for rounded corners */
+     cursor: pointer; /* Change cursor to pointer on hover */
+     animation: zoomIn 1s infinite alternate; /* Apply the zoom-in animation */
+ }
+ 
+ .Devote .devote-button:hover {
+     box-shadow: 0 0 20px rgba(220, 100, 100, 0.8); /* Glow effect on hover */
+     animation: none; /* Disable the animation on hover */
+ }
+
+
+    
+
+
+}
+
+/* Media queries for tablet */
+@media (max-width: 868px) {
+    .content {
+           background-size: cover; 
+        padding: 10px; /* Adjust padding for smaller screens */
+        flex-direction: column; /* Change flex direction to column to stack elements vertically */
+    }
+
+    .left, .right {
+        display: none; /* Hide left and right sections on smaller screens */
+    }
+
+    .slider-container {
+        margin: 0px auto 0; /* Center the slider and add top margin */
+        width: 80%; /* Adjust slider container width for smaller screens */
+        margin-top: -60px;
+    }
+
+    .panchangam {
+        position: relative; /* Change position to relative */
+        width: 50%; /* Adjust width to fill the container */
+        height: 40%;
+        max-width: none; /* Reset max-width */
+        right: -5%;
+        margin-top: -15%; /* Add margin-top to create space between slider and panchangam */
+    }
+    .panchangam h2 {
+        margin-top: 18%;
+        font-size: 26px;
+        margin-bottom: 10px;
+        color: red;
+    }
+    
+    .date {
+        font-weight: bold;
+        font-size: 18px;
+        color: #5c0ec9;
+        margin-bottom: 0px; /* Adjust margin-bottom */
+    }
+    
+    .pan {
+        margin-top: -10px;
+        font-weight: bold;
+        font-size: 18px;
+        color: red;
+    }
+    
+    .day {
+        font-weight: bold;
+        font-size: 18px;
+        color: #5c0ec9;
+        margin-top: 10px; /* Adjust margin-top */
+    }
+    .Devote {
+        background-image: url('images/donate-bg.png');
+        background-size: 100% 100%; /* Adjusts the background image size */
+        background-position: center; /* Centers the background image */
+        width: 38%; /* Adjust width as needed */
+        height: 27%; /* Adjust height as needed */
+        position: absolute;
+        bottom: 18%;
+        right: 5%;
+        text-align: center;
+        color: white;
+        font-size: 24px;
+    }
+    .Devote h2 {
+        font-size: 18px; /* Adjust font size for the heading */
+        margin-top: 20%;
+        margin-bottom: 0px; /* Adjust margin-bottom as needed */
+        background-image: url('images/button1.png'); /* Background image for the heading */
+        background-size: cover; /* Adjusts the background image size */
+        background-position: center; /* Centers the background image */
+        border-radius: 12px;
+        padding: 5px 5px; /* Adjust padding as needed */
+        display: inline-block; /*Ensures the background covers the entire heading*/
+    }
+    .Devote h4 {
+        font-size: 18px; /* Adjust font size */
+        color: #333; /* Text color */
+        margin-top: 20px;
+        margin-bottom: 25px; /* Adjust margin bottom */
+        text-align: center; /* Center text */
+        padding: 0 20px; /* Add padding to the left and right sides */
+    }
+    
+    @keyframes zoomIn {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    
+    .Devote .devote-button {
+        font-size: 18px;
+        font-weight: bold;
+        display: block;
+        margin: 20px auto; /* Center the button horizontally with 20px top and bottom margin */
+        padding: 10px 20px; /* Adjust padding as needed */
+        background-color: #dc6464; /* Button background color */
+        color: #fff; /* Button text color */
+        border: none; /* Remove border */
+        border-radius: 20px; /* Add some border radius for rounded corners */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        animation: zoomIn 1s infinite alternate; /* Apply the zoom-in animation */
+    }
+    
+    .Devote .devote-button:hover {
+        box-shadow: 0 0 20px rgba(220, 100, 100, 0.8); /* Glow effect on hover */
+        animation: none; /* Disable the animation on hover */
+    }
+}
+
+
+
+
+
+@media (max-width: 686px) {
+    .content {
+           background-size: cover; 
+        padding: 10px; /* Adjust padding for smaller screens */
+        flex-direction: column; /* Change flex direction to column to stack elements vertically */
+    }
+
+    .left, .right {
+        display: none; /* Hide left and right sections on smaller screens */
+    }
+
+    .slider-container {
+        margin: -60px auto 0; /* Center the slider and add top margin */
+        width: 80%; /* Adjust slider container width for smaller screens */
+    }
+
+    .panchangam {
+        position: relative; /* Change position to relative */
+        width: 50%; /* Adjust width to fill the container */
+        height: 40%;
+        max-width: none; /* Reset max-width */
+        right: -5%;
+        margin-top: -15%; /* Add margin-top to create space between slider and panchangam */
+      
+    }
+    .panchangam h2 {
+        margin-top: 20%;
+        font-size: 20px;
+        margin-bottom: 0px;
+        color: red;
+        margin-bottom: 5px;
+    }
+    
+    .date {
+        font-weight: bold;
+        font-size: 12px;
+        color: #5c0ec9;
+       /* Adjust margin-bottom */
+    }
+    
+    .pan {
+        margin-top: -10px;
+        font-weight: bold;
+        font-size: 12px;
+        color: red;
+        margin-bottom: 15px;
+    }
+    
+    .day {
+        font-weight: bold;
+        font-size: 12px;
+        color: #5c0ec9;
+        margin-top: 0px; /* Adjust margin-top */
+        margin-bottom: 15px;
+    }
+    .Devote {
+        background-image: url('images/donate-bg.png');
+        background-size: 100% 100%; /* Adjusts the background image size */
+        background-position: center; /* Centers the background image */
+        width: 35%; /* Adjust width as needed */
+        height: 27%; /* Adjust height as needed */
+        position: absolute;
+        bottom: 18%;
+        right: 8%;
+        text-align: center;
+        color: white;
+        font-size: 24px;
+    }
+    .Devote h2 {
+        font-size: 12px; /* Adjust font size for the heading */
+        margin-top: 15%;
+        margin-bottom: 0px; /* Adjust margin-bottom as needed */
+        background-image: url('images/button1.png'); /* Background image for the heading */
+        background-size: cover; /* Adjusts the background image size */
+        background-position: center; /* Centers the background image */
+        border-radius: 20px;
+        padding: 5px 5px; /* Adjust padding as needed */
+        display: inline-block; /*Ensures the background covers the entire heading*/
+    }
+    .Devote h4 {
+        font-size: 12px; /* Adjust font size */
+        color: #333; /* Text color */
+        margin-bottom: 25px; /* Adjust margin bottom */
+        text-align: center; /* Center text */
+        padding: 0 20px; /* Add padding to the left and right sides */
+        margin-top: 10PX;
+    }
+    
+    @keyframes zoomIn {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    
+    .Devote .devote-button {
+        font-size: 12px;
+        font-weight: bold;
+        display: block;
+        margin: 20px auto; /* Center the button horizontally with 20px top and bottom margin */
+        padding: 10px 20px; /* Adjust padding as needed */
+        background-color: #dc6464; /* Button background color */
+        color: #fff; /* Button text color */
+        border: none; /* Remove border */
+        border-radius: 20px; /* Add some border radius for rounded corners */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        animation: zoomIn 1s infinite alternate; /* Apply the zoom-in animation */
+    }
+    
+    .Devote .devote-button:hover {
+        box-shadow: 0 0 20px rgba(220, 100, 100, 0.8); /* Glow effect on hover */
+        animation: none; /* Disable the animation on hover */
+    }
+}
+
+
+
+
+/* Media queries for mobile */
+/* Media queries for tablet screens up to 350px */
+@media (max-width: 450px) {
+    .content {
+        background-size: cover; /* Cover the entire screen without zooming */ 
+        padding: 0px; /* Adjust padding for smaller screens */
+        flex-direction: column; /* Change flex direction to column to stack elements vertically */
+    }
+
+    .left, .right {
+        display: none; /* Hide left and right sections on smaller screens */
+    }
+   
+    .slider-container {
+        position: relative; /* Ensure the parent container is positioned relative */
+        top: -40px; /* Move the slider container 30 pixels up */
+        margin-left: auto; /* Center the slider horizontally */
+        margin-right: auto;
+        width: 100%; /* Adjust slider container width for smaller screens */
+    }
+    .prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    font-size: 12px;
+    background: transparent; /* Semi-transparent white background */
+    padding: 10px;
+    border: none;
+    color: #333; /* Text color */
+    border-radius: 20px;
+}
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    .panchangam {
+        position: relative; /* Change position to relative */
+        width: 55%; /* Adjust width to fill the container */
+        height: 38%;
+        max-width: none; /* Reset max-width */
+        right: -13%;
+        margin-top: -35%; /* Add margin-top to create space between slider and panchangam */
+    }
+    
+    .panchangam h2 {
+        margin-top: 25%;
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: red;
+    }
+    
+    .date {
+        font-weight: bold;
+        font-size: 12px;
+        color: #5c0ec9;
+        margin-bottom: 5px; /* Adjust margin-bottom */
+    }
+    
+    .pan {
+        font-weight: bold;
+        font-size: 12px;
+        color: red;
+    }
+    
+    .day {
+        font-weight: bold;
+        font-size: 12px;
+        color: #5c0ec9;
+        margin-top: 0; /* Adjust margin-top */
+    }
+    
+    .Devote {
+        background-image: url('images/donate-bg.png');
+        background-size: 100% 100%; /* Adjusts the background image size */
+        background-position: center; /* Centers the background image */
+        width: 35%; /* Adjust width as needed */
+        height: 25%; /* Adjust height as needed */
+        position: absolute;
+        bottom: 26%;
+        right: 3%;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        
+    }
+    
+    .Devote h2 {
+        font-size: 11px; /* Adjust font size for the heading */
+        margin-top: 18%;
+        margin-bottom: 0px; /* Adjust margin-bottom as needed */
+        background-image: url('images/button1.png'); /* Background image for the heading */
+        background-size: cover; /* Adjusts the background image size */
+        background-position: center; /* Centers the background image */
+        border-radius: 10px;
+        padding: 5px; /* Adjust padding as needed */
+        display: inline-block; /*Ensures the background covers the entire heading*/
+    }
+    
+    .Devote h4 {
+        font-size: 10px; /* Adjust font size */
+        color: #333; /* Text color */
+        margin-bottom: 8px; /* Adjust margin bottom */
+        text-align: center; /* Center text */
+      /*  padding: 0 20px;  Add padding to the left and right sides */
+    }
+    
+    @keyframes zoomIn {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    
+    .Devote .devote-button {
+        font-size: 12px;
+        font-weight: bold;
+        display: block;
+        margin: 10px auto; /* Center the button horizontally with 20px top and bottom margin */
+        padding: 10px 10px; /* Adjust padding as needed */
+        background-color: #dc6464; /* Button background color */
+        color: #fff; /* Button text color */
+        border: none; /* Remove border */
+        border-radius: 20px; /* Add some border radius for rounded corners */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        animation: zoomIn 1s infinite alternate; /* Apply the zoom-in animation */
+    }
+    
+    .Devote .devote-button:hover {
+        box-shadow: 0 0 20px rgba(220, 100, 100, 0.8); /* Glow effect on hover */
+        animation: none; /* Disable the animation on hover */
+    }
+}
+
+
+@media (max-width: 399px) {
+    .content {
+        background-size: cover; /* Cover the entire screen without zooming */ 
+        padding: 0px; /* Adjust padding for smaller screens */
+        flex-direction: column; /* Change flex direction to column to stack elements vertically */
+    }
+
+    .left, .right {
+        display: none; /* Hide left and right sections on smaller screens */
+    }
+   
+    .slider-container {
+        position: relative; /* Ensure the parent container is positioned relative */
+        top: -20px; /* Move the slider container 30 pixels up */
+        margin-left: auto; /* Center the slider horizontally */
+        margin-right: auto;
+        width: 100%; /* Adjust slider container width for smaller screens */
+    }
+    .prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    font-size: 12px;
+    background: transparent; /* Semi-transparent white background */
+    padding: 10px;
+    border: none;
+    color: #333; /* Text color */
+    border-radius: 20px;
+}
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    .panchangam {
+        position: relative; /* Change position to relative */
+        width: 55%; /* Adjust width to fill the container */
+        height: 40%;
+        max-width: none; /* Reset max-width */
+        right: -13%;
+        margin-top: -30%; /* Add margin-top to create space between slider and panchangam */
+    }
+    
+    .panchangam h2 {
+        margin-top: 20%;
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: red;
+    }
+    
+    .date {
+        font-weight: bold;
+        font-size: 10px;
+        color: #5c0ec9;
+        margin-bottom: 5px; /* Adjust margin-bottom */
+    }
+    
+    .pan {
+        font-weight: bold;
+        font-size: 10px;
+        color: red;
+    }
+    
+    .day {
+        font-weight: bold;
+        font-size: 10px;
+        color: #5c0ec9;
+        margin-top: 0; /* Adjust margin-top */
+    }
+    
+    .Devote {
+        background-image: url('images/donate-bg.png');
+        background-size: 100% 100%; /* Adjusts the background image size */
+        background-position: center; /* Centers the background image */
+        width: 35%; /* Adjust width as needed */
+        height: 25%; /* Adjust height as needed */
+        position: absolute;
+        bottom: 23%;
+        right: 3%;
+        text-align: center;
+        color: white;
+        font-size: 32px;
+        
+    }
+    
+    .Devote h2 {
+        font-size: 10px; /* Adjust font size for the heading */
+        margin-top: 20%;
+        margin-bottom: 0px; /* Adjust margin-bottom as needed */
+        background-image: url('images/button1.png'); /* Background image for the heading */
+        background-size: cover; /* Adjusts the background image size */
+        background-position: center; /* Centers the background image */
+        border-radius: 10px;
+        padding: 5px; /* Adjust padding as needed */
+        display: inline-block; /*Ensures the background covers the entire heading*/
+    }
+    
+    .Devote h4 {
+        font-size: 10px; /* Adjust font size */
+        color: #333; /* Text color */
+        margin-bottom: 8px; /* Adjust margin bottom */
+        text-align: center; /* Center text */
+      /*  padding: 0 20px;  Add padding to the left and right sides */
+    }
+    
+    @keyframes zoomIn {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    
+    .Devote .devote-button {
+        font-size: 10px;
+        font-weight: bold;
+        display: block;
+        margin: 10px auto; /* Center the button horizontally with 20px top and bottom margin */
+        padding: 10px 10px; /* Adjust padding as needed */
+        background-color: #dc6464; /* Button background color */
+        color: #fff; /* Button text color */
+        border: none; /* Remove border */
+        border-radius: 20px; /* Add some border radius for rounded corners */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        animation: zoomIn 1s infinite alternate; /* Apply the zoom-in animation */
+    }
+    
+    .Devote .devote-button:hover {
+        box-shadow: 0 0 20px rgba(220, 100, 100, 0.8); /* Glow effect on hover */
+        animation: none; /* Disable the animation on hover */
+    }
+}
+
+
+
+@media (max-width: 355px) {
+    .content {
+        background-size: cover; /* Cover the entire screen without zooming */ 
+        padding: 0px; /* Adjust padding for smaller screens */
+        flex-direction: column; /* Change flex direction to column to stack elements vertically */
+    }
+
+    .left, .right {
+        display: none; /* Hide left and right sections on smaller screens */
+    }
+   
+    .slider-container {
+        position: relative; /* Ensure the parent container is positioned relative */
+        top: -10px; /* Move the slider container 30 pixels up */
+        margin-left: auto; /* Center the slider horizontally */
+        margin-right: auto;
+        width: 100%; /* Adjust slider container width for smaller screens */
+    }
+    .prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    font-size: 12px;
+    background: transparent; /* Semi-transparent white background */
+    padding: 10px;
+    border: none;
+    color: #333; /* Text color */
+    border-radius: 20px;
+}
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    .panchangam {
+        position: relative; /* Change position to relative */
+        width: 55%; /* Adjust width to fill the container */
+        height: 40%;
+        max-width: none; /* Reset max-width */
+        right: -13%;
+        margin-top: -30%; /* Add margin-top to create space between slider and panchangam */
+    }
+    
+    .panchangam h2 {
+        margin-top: 30%;
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: red;
+    }
+    
+    .date {
+        font-weight: bold;
+        font-size: 10px;
+        color: #5c0ec9;
+        margin-bottom: 5px; /* Adjust margin-bottom */
+    }
+    
+    .pan {
+        font-weight: bold;
+        font-size: 10px;
+        color: red;
+    }
+    
+    .day {
+        font-weight: bold;
+        font-size: 10px;
+        color: #5c0ec9;
+        margin-top: 0; /* Adjust margin-top */
+    }
+    
+    .Devote {
+        background-image: url('images/donate-bg.png');
+        background-size: 100% 100%; /* Adjusts the background image size */
+        background-position: center; /* Centers the background image */
+        width: 35%; /* Adjust width as needed */
+        height: 28%; /* Adjust height as needed */
+        position: absolute;
+        bottom: 20%;
+        right: 3%;
+        text-align: center;
+        color: white;
+        font-size: 32px;
+        
+    }
+    
+    .Devote h2 {
+        font-size: 9px; /* Adjust font size for the heading */
+        margin-top: 18%;
+        margin-bottom: 0px; /* Adjust margin-bottom as needed */
+        background-image: url('images/button1.png'); /* Background image for the heading */
+        background-size: cover; /* Adjusts the background image size */
+        background-position: center; /* Centers the background image */
+        border-radius: 10px;
+        padding: 5px; /* Adjust padding as needed */
+        display: inline-block; /*Ensures the background covers the entire heading*/
+    }
+    
+    .Devote h4 {
+        font-size: 8px; /* Adjust font size */
+        color: #333; /* Text color */
+        margin-bottom: 8px; /* Adjust margin bottom */
+        text-align: center; /* Center text */
+      /*  padding: 0 20px;  Add padding to the left and right sides */
+    }
+    
+    @keyframes zoomIn {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    
+    .Devote .devote-button {
+        font-size: 10px;
+        font-weight: bold;
+        display: block;
+        margin: 10px auto; /* Center the button horizontally with 20px top and bottom margin */
+        padding: 10px 10px; /* Adjust padding as needed */
+        background-color: #dc6464; /* Button background color */
+        color: #fff; /* Button text color */
+        border: none; /* Remove border */
+        border-radius: 20px; /* Add some border radius for rounded corners */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        animation: zoomIn 1s infinite alternate; /* Apply the zoom-in animation */
+    }
+    
+    .Devote .devote-button:hover {
+        box-shadow: 0 0 20px rgba(220, 100, 100, 0.8); /* Glow effect on hover */
+        animation: none; /* Disable the animation on hover */
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 330px) {
+    .content {
+        background-size: cover; /* Cover the entire screen without zooming */ 
+        padding: 0px; /* Adjust padding for smaller screens */
+        flex-direction: column; /* Change flex direction to column to stack elements vertically */
+    }
+
+    .left, .right {
+        display: none; /* Hide left and right sections on smaller screens */
+    }
+   
+    .slider-container {
+        position: relative; /* Ensure the parent container is positioned relative */
+        top: 80px; /* Move the slider container 30 pixels up */
+        margin-left: auto; /* Center the slider horizontally */
+        margin-right: auto;
+        width: 100%; /* Adjust slider container width for smaller screens */
+    }
+    .prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    font-size: 12px;
+    background: transparent; /* Semi-transparent white background */
+    padding: 10px;
+    border: none;
+    color: #333; /* Text color */
+    border-radius: 20px;
+}
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    .panchangam {
+        position: relative; /* Change position to relative */
+        width: 55%; /* Adjust width to fill the container */
+        height: 40%;
+        max-width: none; /* Reset max-width */
+        right: -13%;
+        margin-top: 10%; /* Add margin-top to create space between slider and panchangam */
+    }
+    
+    .panchangam h2 {
+        margin-top: 16%;
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: red;
+    }
+    
+    .date {
+        font-weight: bold;
+        font-size: 8px;
+        color: #5c0ec9;
+        margin-bottom: 5px; /* Adjust margin-bottom */
+    }
+    
+    .pan {
+        font-weight: bold;
+        font-size: 8px;
+        color: red;
+    }
+    
+    .day {
+        font-weight: bold;
+        font-size: 8px;
+        color: #5c0ec9;
+        margin-top: 0; /* Adjust margin-top */
+    }
+    
+    .Devote {
+        background-image: url('images/donate-bg.png');
+        background-size: 100% 100%; /* Adjusts the background image size */
+        background-position: center; /* Centers the background image */
+        width: 35%; /* Adjust width as needed */
+        height: 28%; /* Adjust height as needed */
+        position: absolute;
+        bottom: 10%;
+        right: 3%;
+        text-align: center;
+        color: white;
+        font-size: 32px;
+        
+    }
+    
+    .Devote h2 {
+        font-size: 9px; /* Adjust font size for the heading */
+        margin-top: 18%;
+        margin-bottom: 0px; /* Adjust margin-bottom as needed */
+        background-image: url('images/button1.png'); /* Background image for the heading */
+        background-size: cover; /* Adjusts the background image size */
+        background-position: center; /* Centers the background image */
+        border-radius: 10px;
+        padding: 5px; /* Adjust padding as needed */
+        display: inline-block; /*Ensures the background covers the entire heading*/
+    }
+    
+    .Devote h4 {
+        font-size: 8px; /* Adjust font size */
+        color: #333; /* Text color */
+        margin-bottom: 8px; /* Adjust margin bottom */
+        text-align: center; /* Center text */
+      /*  padding: 0 20px;  Add padding to the left and right sides */
+    }
+    
+    @keyframes zoomIn {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    
+    .Devote .devote-button {
+        font-size: 10px;
+        font-weight: bold;
+        display: block;
+        margin: 10px auto; /* Center the button horizontally with 20px top and bottom margin */
+        padding: 10px 10px; /* Adjust padding as needed */
+        background-color: #dc6464; /* Button background color */
+        color: #fff; /* Button text color */
+        border: none; /* Remove border */
+        border-radius: 20px; /* Add some border radius for rounded corners */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        animation: zoomIn 1s infinite alternate; /* Apply the zoom-in animation */
+    }
+    
+    .Devote .devote-button:hover {
+        box-shadow: 0 0 20px rgba(220, 100, 100, 0.8); /* Glow effect on hover */
+        animation: none; /* Disable the animation on hover */
+    }
+}
