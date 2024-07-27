@@ -100,15 +100,16 @@
     text-decoration: none; /* Remove underline */
 }
 .top-button:nth-child(1) {
-    left: 20%;
+    left: 25%;
 }
 
 .top-button:nth-child(2) {
-    left: 43%;
+    left: 55%;
 }
 
 .top-button:nth-child(3) {
     left: 65%;
+    display: none;
 }
 
 .top-button:hover {
@@ -144,11 +145,12 @@
     }
     
     .top-button:nth-child(2) {
-        left: 38%;
+        left: 70%;
     }
     
     .top-button:nth-child(3) {
-        left: 70%;
+        left: 38%;
+        display: none;
     }
     
     .top-button:hover {
@@ -191,11 +193,12 @@
     }
     
     .top-button:nth-child(2) {
-        left: 38%;
+        left: 70%;
     }
     
     .top-button:nth-child(3) {
-        left: 70%;
+        left: 38%;
+        display: none;
     }
     
     .top-button:hover {
@@ -292,11 +295,12 @@
 }
 
 .top-button:nth-child(2) {
-    left: 43%;
+    left: 65%;
 }
 
 .top-button:nth-child(3) {
-    left: 65%;
+    left: 43%;
+    display: none;
 }
 
 .top-button:hover {
@@ -341,11 +345,12 @@
     }
     
     .top-button:nth-child(2) {
-        left: 40%;
+        left: 70%;
     }
     
     .top-button:nth-child(3) {
-        left: 70%;
+        left: 40%;
+        display: none;
     }
     
     .top-button:hover {
@@ -436,11 +441,12 @@
 }
 
 .top-button:nth-child(2) {
-    left: 38%;
+    left: 68%;
 }
 
 .top-button:nth-child(3) {
-    left: 68%;
+    left: 38%;
+    display: none;
 }
 
 .top-button:hover {

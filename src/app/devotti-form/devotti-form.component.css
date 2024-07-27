@@ -100,15 +100,16 @@
     text-decoration: none; /* Remove underline */
 }
 .top-button:nth-child(1) {
-    left: 20%;
+    left: 30%;
 }
 
 .top-button:nth-child(2) {
-    left: 43%;
+    left: 50%;
 }
 
 .top-button:nth-child(3) {
     left: 65%;
+    display: none;
 }
 
 .top-button:hover {
