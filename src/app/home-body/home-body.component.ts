@@ -17,7 +17,7 @@ interface Panchangam {
   styleUrls: ['./home-body.component.css']
 })
 export class HomeBodyComponent implements OnInit {
-  images: string[] = ['/assets/Event_Images/sliding_img_1.jpg', '/assets/Event_Images/sliding_img_2.jpg', '/assets/Event_Images/sliding_img_3.jpg', '/assets/Event_Images/sliding_img_4.jpg', '/assets/Event_Images/sliding_img_5.jpg'];
+  images: string[] = ['/assets/Event_Images/sliding_img_1.jpg', '/assets/Event_Images/sliding_img_2.jpg','/assets/Event_Images/sliding_img_3.jpg'];
   currentIndex: number = 0;
   currentDate: string = '';
   currentDay: string = '';

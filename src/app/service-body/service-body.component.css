@@ -53,11 +53,11 @@
     background-position: center;
     /* Optional: Add more styling if needed */
     width: 70%; /* Adjust width if needed */
-    height: 86%; /* Adjust height if needed */
+    height: 55%; /* Adjust height if needed */
   }
   .inside-img h2 {
     position: absolute;
-    top: 12%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
@@ -291,7 +291,7 @@
         color: #ffffff;
         background-position: center;
         width: 70%;
-        height: 86%;
+        height: 55%;
     }
 
 
@@ -413,7 +413,7 @@
     background-position: center;
     /* Optional: Add more styling if needed */
     width: 90%; /* Adjust width if needed */
-    height: 86%; /* Adjust height if needed */
+    height: 55%; /* Adjust height if needed */
   }
   .inside-img h2 {
     position: absolute;
@@ -468,7 +468,7 @@
 }
 
 .extra{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     padding: 10px;
     margin: 0; /* Remove default margin */
@@ -572,7 +572,7 @@
     background-position: center;
     /* Optional: Add more styling if needed */
     width: 90%; /* Adjust width if needed */
-    height: 86%; /* Adjust height if needed */
+    height: 55%; /* Adjust height if needed */
   }
   .inside-img h2 {
     position: absolute;
@@ -709,7 +709,7 @@
     background-size: 100% 100%;
     background-position: center;
     font-family: Arial, sans-serif; 
-    height: 2100px;
+    height: 1300px;
 }
 
 
@@ -733,12 +733,12 @@
     background-position: center;
     /* Optional: Add more styling if needed */
     width: 90%; /* Adjust width if needed */
-    height: 86%; /* Adjust height if needed */
+    height: 75%; /* Adjust height if needed */
   }
   .inside-img h2 {
     font-size: 20px;
     position: absolute;
-    top: 9%;
+    top: 14%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
