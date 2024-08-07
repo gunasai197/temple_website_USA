@@ -33,6 +33,7 @@
             "assets": [
               "src/logo1.png",
               "src/assets",
+              "src/web.config",
               "src/assets/panchangam_data.json"
             ],
             "styles": [
