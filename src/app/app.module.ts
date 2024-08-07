@@ -42,13 +42,13 @@ const appRoutes: Routes=[
   {
     path:'contact',component:ContactBodyComponent
  },{
-     path:'book',component:FormsComponent
+     path:'poojabooking',component:FormsComponent
  },{
   path:'prasadamBooking',component:PrasadamFormComponent
 },{
   path:'shaadhamBooking',component:ShaadhamFormComponent
 },{
-  path:'devotti',component:DevottiFormComponent
+  path:'devotee',component:DevottiFormComponent
 }
 ]
 
