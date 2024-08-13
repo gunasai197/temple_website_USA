@@ -15,7 +15,7 @@
     background-size: 100% 100%;
     background-position: center;
     font-family: Arial, sans-serif; 
-    height: 1500px;
+    height: 1100px;
 }
 
 
@@ -53,14 +53,14 @@
     background-position: center;
     /* Optional: Add more styling if needed */
     width: 70%; /* Adjust width if needed */
-    height: 86%; /* Adjust height if needed */
+    height: 60%; /* Adjust height if needed */
   }
   .inside-img h2 {
     position: absolute;
-    top: 12%;
-    left: 50%;
+    top: 11%;
+    left: 46%;
     transform: translate(-50%, -50%);
-    margin: 0;
+    margin: 65px;
 }
 
 .image {
